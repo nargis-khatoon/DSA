@@ -25,7 +25,7 @@ public:
 	    vector<int> vis(V+1, 0); 
 	    for(int i = 0;i<V;i++) {
 	        if(!vis[i]) {
-	            if(checkForCycle(i, -1, vis, adj)) return true; 
+	            if(dfsCycle(i, -1, vis, adj)) return true; 
 	        }
 	    }
 	    
