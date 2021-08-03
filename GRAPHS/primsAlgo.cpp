@@ -1,4 +1,5 @@
 //MINIMUM SPANNING TREE //  time: O(N log N)
+//ques. Connect all cities with minimum cost 
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -35,7 +36,7 @@ int main(){
   
         for (int v = 0; v < N; v++) 
             if (mstSet[v] == false && key[v] < mini) 
-                mini = key[v], u = v; 
+                mini = key[v], u = v;
                 
         mstSet[u] = true; 
         
