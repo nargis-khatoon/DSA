@@ -36,7 +36,7 @@ public:
                         countof1--;
                     }
                 }  
-            }
+            }//processing for starting 2s first then counting time for subsequent 1s converted to 2s
             if(!q.empty()) t++;
         }
         if(countof1!=0) return -1;
